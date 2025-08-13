@@ -318,7 +318,7 @@ void CWeaponMagazined::ReloadMagazine()
 				m_pAmmo = smart_cast<CWeaponAmmo*>(m_pInventory->GetAny(*m_ammoTypes[i]));
 				if(m_pAmmo) 
 				{ 
-					m_ammoType = i; 
+					m_set_next_ammoType_on_reload = i; 
 					break; 
 				}
 			}
